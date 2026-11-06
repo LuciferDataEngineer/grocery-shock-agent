@@ -1,0 +1,129 @@
+{
+  "question": "Which food categories hurt most?",
+  "started_at": "2026-11-07T09:39:13+11:00",
+  "timezone": "Australia/Melbourne",
+  "steps": [
+    {
+      "kind": "thought",
+      "text": "The question asks which shelf prices rose fastest, so I need the latest published yearly changes for supermarket lines."
+    },
+    {
+      "kind": "action",
+      "tool": "rank_categories",
+      "arguments": {
+        "metric": "yoy",
+        "n": 5,
+        "direction": "worst",
+        "scope": "shelf"
+      }
+    },
+    {
+      "kind": "observation",
+      "tool": "rank_categories",
+      "ok": true,
+      "payload": {
+        "period": "2026-09",
+        "period_label": "September 2026",
+        "direction": "worst",
+        "food_yoy": 3.2,
+        "headline_yoy": 4.3,
+        "rows": [
+          {
+            "plain_name": "Fruit",
+            "index_id": "114121",
+            "yoy_pct": 10.2,
+            "mom_pct": 1.857328,
+            "contribution_pp": 0.0915,
+            "weight_pct": 0.923,
+            "period": "2026-09"
+          },
+          {
+            "plain_name": "Breakfast cereals",
+            "index_id": "40007",
+            "yoy_pct": 8.5,
+            "mom_pct": 5.106094,
+            "contribution_pp": 0.0081,
+            "weight_pct": 0.099,
+            "period": "2026-09"
+          },
+          {
+            "plain_name": "Beef",
+            "index_id": "40009",
+            "yoy_pct": 5.8,
+            "mom_pct": -1.84584,
+            "contribution_pp": 0.0255,
+            "weight_pct": 0.4234,
+            "period": "2026-09"
+          },
+          {
+            "plain_name": "Milk",
+            "index_id": "40001",
+            "yoy_pct": 5.4,
+            "mom_pct": -1.762238,
+            "contribution_pp": 0.0223,
+            "weight_pct": 0.4187,
+            "period": "2026-09"
+          },
+          {
+            "plain_name": "Soft drinks and juices",
+            "index_id": "115520",
+            "yoy_pct": 4.9,
+            "mom_pct": -0.812931,
+            "contribution_pp": 0.0463,
+            "weight_pct": 0.9503,
+            "period": "2026-09"
+          }
+        ],
+        "relief": [
+          {
+            "plain_name": "Eggs",
+            "index_id": "40027",
+            "yoy_pct": -2.3
+          },
+          {
+            "plain_name": "Pork",
+            "index_id": "131178",
+            "yoy_pct": -1.3
+          },
+          {
+            "plain_name": "Coffee and tea",
+            "index_id": "40030",
+            "yoy_pct": -1.0
+          }
+        ]
+      }
+    },
+    {
+      "kind": "thought",
+      "text": "The published figures I need are already in the observations."
+    },
+    {
+      "kind": "final",
+      "text": "In September 2026, the sharpest rises on the supermarket shelf were Fruit (up 10.2%), Breakfast cereals (up 8.5%), Beef (up 5.8%), Milk (up 5.4%), and Soft drinks and juices (up 4.9%). Food and drinks as a whole were up 3.2%, slower than overall prices, which were up 4.3%. The lines that eased were Eggs (down 2.3%), Pork (down 1.3%), and Coffee and tea (down 1.0%).",
+      "citations": [
+        "Fruit up 10.2%",
+        "Breakfast cereals up 8.5%",
+        "Beef up 5.8%",
+        "Milk up 5.4%",
+        "Soft drinks and juices up 4.9%",
+        "Eggs down 2.3%",
+        "Pork down 1.3%",
+        "Coffee and tea down 1.0%"
+      ]
+    }
+  ],
+  "answer": "In September 2026, the sharpest rises on the supermarket shelf were Fruit (up 10.2%), Breakfast cereals (up 8.5%), Beef (up 5.8%), Milk (up 5.4%), and Soft drinks and juices (up 4.9%). Food and drinks as a whole were up 3.2%, slower than overall prices, which were up 4.3%. The lines that eased were Eggs (down 2.3%), Pork (down 1.3%), and Coffee and tea (down 1.0%).",
+  "citations": [
+    "Fruit up 10.2%",
+    "Breakfast cereals up 8.5%",
+    "Beef up 5.8%",
+    "Milk up 5.4%",
+    "Soft drinks and juices up 4.9%",
+    "Eggs down 2.3%",
+    "Pork down 1.3%",
+    "Coffee and tea down 1.0%"
+  ],
+  "tools_used": [
+    "rank_categories"
+  ]
+}

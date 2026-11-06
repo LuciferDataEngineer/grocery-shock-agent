@@ -1,0 +1,8 @@
+grocery_shock:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('GROCERY_DUCKDB') }}"
+      threads: 1
+      schema: main

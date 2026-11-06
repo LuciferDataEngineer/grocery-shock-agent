@@ -1,0 +1,43 @@
+{
+  "project": "grocery-shock-agent",
+  "access_date": "2026-11-06",
+  "timezone": "Australia/Melbourne",
+  "free": true,
+  "notes": [
+    "Snapshots were downloaded from the public APIs on 6 November 2026. No observation in these files was typed in by hand.",
+    "The ABS combined-key request for CPI weights returns only one quarter per series. The weight snapshot was collected by requesting each series on its own, which returns the full history through 2024-Q4.",
+    "The 2018-Q3 all-groups weight observation was blank in the API response and is omitted. Later all-groups weights are 100.",
+    "On 30 September 2026 the RBA cash rate target moves from 4.35 to 4.60 and the interbank overnight cash rate prints 4.60, but the published change column is blank. Both the blank column and the levels are kept."
+  ],
+  "datasets": [
+    {
+      "name": "Consumer Price Index, monthly index, yearly change, and yearly contribution",
+      "publisher": "Australian Bureau of Statistics",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,CPI,2.0.0/",
+      "licence": "CC BY 4.0",
+      "coverage": "Australia, original, monthly. Index numbers (measure 1) from 2023-09 through 2026-09. Percentage change from the previous year (measure 3) and contribution to the annual percentage-point change (measure 7) from 2024-09 or 2025-09 through 2026-09, as published. Latest month is 2026-09.",
+      "series_key_pattern": "{measure}.{index_id}.10.50.M",
+      "snapshot": "data/raw/cpi_observations.csv",
+      "free": true
+    },
+    {
+      "name": "Consumer Price Index weights",
+      "publisher": "Australian Bureau of Statistics",
+      "url": "https://data.api.abs.gov.au/rest/data/ABS,CPI_WEIGHTS,1.0.0/",
+      "licence": "CC BY 4.0",
+      "coverage": "Percentage contribution to the All groups CPI, weighted average of eight capital cities, quarterly from 2018-Q3 through 2024-Q4. Latest weight period used in the briefing is 2024-Q4.",
+      "series_key_pattern": "1.{index_id}.50.Q",
+      "snapshot": "data/raw/cpi_weights.csv",
+      "free": true
+    },
+    {
+      "name": "F1 cash rate target and interbank overnight cash rate",
+      "publisher": "Reserve Bank of Australia",
+      "url": "https://www.rba.gov.au/statistics/tables/csv/f1-data.csv",
+      "licence": "Free RBA statistical table. Attribute the Reserve Bank of Australia. Not a Creative Commons licence.",
+      "coverage": "Daily cash rate target, the published change column, and the interbank overnight cash rate from 2024-01-02 through 2026-11-05. The 6 November 2026 target cell was empty in the source file on access day, so the extract stops at 5 November 2026.",
+      "snapshot": "data/raw/rba_cash_rate_daily.csv",
+      "free": true
+    }
+  ]
+}

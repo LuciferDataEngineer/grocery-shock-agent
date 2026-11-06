@@ -1,0 +1,28 @@
+name: grocery_shock
+version: "1.0.0"
+config-version: 2
+profile: grocery_shock
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages", "logs"]
+
+seeds:
+  grocery_shock:
+    series_catalog:
+      +column_types:
+        index_id: varchar
+        abs_name: varchar
+        plain_name: varchar
+        level: varchar
+        family: varchar
+        shelf: integer
+        aisle: varchar
+
+models:
+  grocery_shock:
+    silver:
+      +materialized: view
+    gold:
+      +materialized: table

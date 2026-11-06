@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: mart_category_monthly
+    description: One row per price line and month, with the published yearly change.
+    columns:
+      - name: series_month_key
+        tests: [unique, not_null]
+      - name: index_id
+        tests: [not_null]
+      - name: period
+        tests: [not_null]
+      - name: index_value
+        tests: [not_null]
+  - name: mart_latest
+    description: Latest published month for every price line.
+    columns:
+      - name: index_id
+        tests: [unique, not_null]
+      - name: yoy_pct
+        tests:
+          - not_null:
+              config:
+                where: "index_id in ('10001', '20001', '114121', '40009', '20005')"
+  - name: mart_headline
+    columns:
+      - name: period
+        tests: [not_null]
+      - name: headline_yoy
+        tests: [not_null]
+      - name: food_yoy
+        tests: [not_null]
+  - name: mart_rate_decisions
+    columns:
+      - name: decision_date
+        tests: [unique, not_null]
+      - name: cash_rate_target
+        tests: [not_null]
