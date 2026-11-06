@@ -1,0 +1,576 @@
+[
+  {
+    "question": "Which food categories hurt most?",
+    "started_at": "2026-11-07T09:39:13+11:00",
+    "timezone": "Australia/Melbourne",
+    "steps": [
+      {
+        "kind": "thought",
+        "text": "The question asks which shelf prices rose fastest, so I need the latest published yearly changes for supermarket lines."
+      },
+      {
+        "kind": "action",
+        "tool": "rank_categories",
+        "arguments": {
+          "metric": "yoy",
+          "n": 5,
+          "direction": "worst",
+          "scope": "shelf"
+        }
+      },
+      {
+        "kind": "observation",
+        "tool": "rank_categories",
+        "ok": true,
+        "payload": {
+          "period": "2026-09",
+          "period_label": "September 2026",
+          "direction": "worst",
+          "food_yoy": 3.2,
+          "headline_yoy": 4.3,
+          "rows": [
+            {
+              "plain_name": "Fruit",
+              "index_id": "114121",
+              "yoy_pct": 10.2,
+              "mom_pct": 1.857328,
+              "contribution_pp": 0.0915,
+              "weight_pct": 0.923,
+              "period": "2026-09"
+            },
+            {
+              "plain_name": "Breakfast cereals",
+              "index_id": "40007",
+              "yoy_pct": 8.5,
+              "mom_pct": 5.106094,
+              "contribution_pp": 0.0081,
+              "weight_pct": 0.099,
+              "period": "2026-09"
+            },
+            {
+              "plain_name": "Beef",
+              "index_id": "40009",
+              "yoy_pct": 5.8,
+              "mom_pct": -1.84584,
+              "contribution_pp": 0.0255,
+              "weight_pct": 0.4234,
+              "period": "2026-09"
+            },
+            {
+              "plain_name": "Milk",
+              "index_id": "40001",
+              "yoy_pct": 5.4,
+              "mom_pct": -1.762238,
+              "contribution_pp": 0.0223,
+              "weight_pct": 0.4187,
+              "period": "2026-09"
+            },
+            {
+              "plain_name": "Soft drinks and juices",
+              "index_id": "115520",
+              "yoy_pct": 4.9,
+              "mom_pct": -0.812931,
+              "contribution_pp": 0.0463,
+              "weight_pct": 0.9503,
+              "period": "2026-09"
+            }
+          ],
+          "relief": [
+            {
+              "plain_name": "Eggs",
+              "index_id": "40027",
+              "yoy_pct": -2.3
+            },
+            {
+              "plain_name": "Pork",
+              "index_id": "131178",
+              "yoy_pct": -1.3
+            },
+            {
+              "plain_name": "Coffee and tea",
+              "index_id": "40030",
+              "yoy_pct": -1.0
+            }
+          ]
+        }
+      },
+      {
+        "kind": "thought",
+        "text": "The published figures I need are already in the observations."
+      },
+      {
+        "kind": "final",
+        "text": "In September 2026, the sharpest rises on the supermarket shelf were Fruit (up 10.2%), Breakfast cereals (up 8.5%), Beef (up 5.8%), Milk (up 5.4%), and Soft drinks and juices (up 4.9%). Food and drinks as a whole were up 3.2%, slower than overall prices, which were up 4.3%. The lines that eased were Eggs (down 2.3%), Pork (down 1.3%), and Coffee and tea (down 1.0%).",
+        "citations": [
+          "Fruit up 10.2%",
+          "Breakfast cereals up 8.5%",
+          "Beef up 5.8%",
+          "Milk up 5.4%",
+          "Soft drinks and juices up 4.9%",
+          "Eggs down 2.3%",
+          "Pork down 1.3%",
+          "Coffee and tea down 1.0%"
+        ]
+      }
+    ],
+    "answer": "In September 2026, the sharpest rises on the supermarket shelf were Fruit (up 10.2%), Breakfast cereals (up 8.5%), Beef (up 5.8%), Milk (up 5.4%), and Soft drinks and juices (up 4.9%). Food and drinks as a whole were up 3.2%, slower than overall prices, which were up 4.3%. The lines that eased were Eggs (down 2.3%), Pork (down 1.3%), and Coffee and tea (down 1.0%).",
+    "citations": [
+      "Fruit up 10.2%",
+      "Breakfast cereals up 8.5%",
+      "Beef up 5.8%",
+      "Milk up 5.4%",
+      "Soft drinks and juices up 4.9%",
+      "Eggs down 2.3%",
+      "Pork down 1.3%",
+      "Coffee and tea down 1.0%"
+    ],
+    "tools_used": [
+      "rank_categories"
+    ]
+  },
+  {
+    "question": "What should households substitute for beef?",
+    "started_at": "2026-11-07T09:39:13+11:00",
+    "timezone": "Australia/Melbourne",
+    "steps": [
+      {
+        "kind": "thought",
+        "text": "The question asks for a substitute, so I need the same aisle's published yearly changes, not a guess."
+      },
+      {
+        "kind": "action",
+        "tool": "substitution_hints",
+        "arguments": {
+          "category": "40009"
+        }
+      },
+      {
+        "kind": "observation",
+        "tool": "substitution_hints",
+        "ok": true,
+        "payload": {
+          "period": "2026-09",
+          "period_label": "September 2026",
+          "plain_name": "Beef",
+          "index_id": "40009",
+          "family": "meat",
+          "yoy_pct": 5.8,
+          "alternatives": [
+            {
+              "plain_name": "Pork",
+              "index_id": "131178",
+              "yoy_pct": -1.3,
+              "gap_pp": -7.1
+            },
+            {
+              "plain_name": "Poultry",
+              "index_id": "40012",
+              "yoy_pct": 0.4,
+              "gap_pp": -5.4
+            },
+            {
+              "plain_name": "Fish",
+              "index_id": "40015",
+              "yoy_pct": 1.7,
+              "gap_pp": -4.1
+            },
+            {
+              "plain_name": "Lamb",
+              "index_id": "40010",
+              "yoy_pct": 3.0,
+              "gap_pp": -2.8
+            }
+          ],
+          "note": "Relative published price changes only. Not diet advice."
+        }
+      },
+      {
+        "kind": "thought",
+        "text": "The published figures I need are already in the observations."
+      },
+      {
+        "kind": "final",
+        "text": "Beef was up 5.8% in September 2026. In the same part of the shop, slower price rises were Pork (down 1.3%), Poultry (up 0.4%), Fish (up 1.7%), and Lamb (up 3.0%). Relative published price changes only. Not diet advice.",
+        "citations": [
+          "Beef up 5.8%",
+          "Pork down 1.3%",
+          "Poultry up 0.4%",
+          "Fish up 1.7%",
+          "Lamb up 3.0%"
+        ]
+      }
+    ],
+    "answer": "Beef was up 5.8% in September 2026. In the same part of the shop, slower price rises were Pork (down 1.3%), Poultry (up 0.4%), Fish (up 1.7%), and Lamb (up 3.0%). Relative published price changes only. Not diet advice.",
+    "citations": [
+      "Beef up 5.8%",
+      "Pork down 1.3%",
+      "Poultry up 0.4%",
+      "Fish up 1.7%",
+      "Lamb up 3.0%"
+    ],
+    "tools_used": [
+      "substitution_hints"
+    ]
+  },
+  {
+    "question": "What should policymakers watch next?",
+    "started_at": "2026-11-07T09:39:13+11:00",
+    "timezone": "Australia/Melbourne",
+    "steps": [
+      {
+        "kind": "thought",
+        "text": "I need the latest published headline figures before answering."
+      },
+      {
+        "kind": "action",
+        "tool": "get_kpi_snapshot",
+        "arguments": {}
+      },
+      {
+        "kind": "observation",
+        "tool": "get_kpi_snapshot",
+        "ok": true,
+        "payload": {
+          "period": "2026-09",
+          "period_label": "September 2026",
+          "headline_yoy": 4.3,
+          "food_yoy": 3.2,
+          "housing_yoy": 5.2,
+          "transport_yoy": 8.7,
+          "petrol_yoy": 23.6,
+          "electricity_yoy": 12.8,
+          "rents_yoy": 3.6,
+          "fruit_yoy": 10.2,
+          "beef_yoy": 5.8,
+          "cereals_yoy": 8.5,
+          "eggs_yoy": -2.3,
+          "pork_yoy": -1.3,
+          "poultry_yoy": 0.4,
+          "milk_yoy": 5.4,
+          "food_contribution_pp": 0.5578,
+          "housing_contribution_pp": 1.1415,
+          "transport_contribution_pp": 0.9853,
+          "petrol_contribution_pp": 0.7702,
+          "fruit_contribution_pp": 0.0915,
+          "electricity_contribution_pp": 0.3034,
+          "meals_out_contribution_pp": 0.2768,
+          "cash_rate_target": 4.85,
+          "cash_rate_date": "2026-11-04",
+          "hikes_2026": 5,
+          "rate_before_2026_rises": 3.6,
+          "rate_path_2026": [
+            {
+              "decision_date": "2026-02-04",
+              "cash_rate_target": 3.85,
+              "previous_target": 3.6,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-03-18",
+              "cash_rate_target": 4.1,
+              "previous_target": 3.85,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-05-06",
+              "cash_rate_target": 4.35,
+              "previous_target": 4.1,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-09-30",
+              "cash_rate_target": 4.6,
+              "previous_target": 4.35,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": null,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-11-04",
+              "cash_rate_target": 4.85,
+              "previous_target": 4.6,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            }
+          ],
+          "latest_decision": {
+            "decision_date": "2026-11-04",
+            "cash_rate_target": 4.85,
+            "previous_target": 4.6,
+            "change_from_level": 0.25,
+            "cash_rate_change_published": 0.25,
+            "move": "hike"
+          }
+        }
+      },
+      {
+        "kind": "thought",
+        "text": "I will check the stored briefing notes for what to watch next."
+      },
+      {
+        "kind": "action",
+        "tool": "retrieve_insights",
+        "arguments": {
+          "query": "What should policymakers watch next?",
+          "k": 3
+        }
+      },
+      {
+        "kind": "observation",
+        "tool": "retrieve_insights",
+        "ok": true,
+        "payload": {
+          "query": "What should policymakers watch next?",
+          "matches": [
+            {
+              "doc_id": "watch-next",
+              "title": "What policymakers should watch next",
+              "body": "Policymakers should watch petrol, electricity, housing, and the cash rate ahead of the average supermarket aisle. Petrol was up 23.6% and added 0.77 points. Transport was up 8.7% and added 0.99 points. Housing was up 5.2% and added 1.14 points. Electricity was up 12.8%. Rents were up 3.6%. The cash rate target is 4.85 percent after 5 rises in 2026. Fruit's shelf jump is real for households but small in the national index.",
+              "distance": 0.941579
+            },
+            {
+              "doc_id": "cash-rate",
+              "title": "Cash rate path and mortgage pressure",
+              "body": "The Reserve Bank cash rate target was 4.85 percent on 2026-11-05. It rose 5 times in 2026, from 3.60 percent before the first rise. The 2026-09-30 move to 4.60 percent shows up in the target and the overnight rate; the published change column for that day is blank. Mortgage repayments sit outside the grocery price index. Households can face both a higher cash rate and uneven grocery prices.",
+              "distance": 0.95792
+            },
+            {
+              "doc_id": "eating-out",
+              "title": "Meals out versus cooking at home",
+              "body": "Meals out and takeaway added 0.28 points to the national yearly rise, more than fruit's 0.09 points, because eating out has a much larger weight. Restaurant meals were up 4.1%. Takeaway was up 3.6%.",
+              "distance": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "kind": "thought",
+        "text": "The published figures I need are already in the observations."
+      },
+      {
+        "kind": "final",
+        "text": "In September 2026, overall prices were up 4.3%. Food and drinks were up 3.2% and added 0.56 points to the national yearly rise. Housing was up 5.2% and added 1.14 points. Transport was up 8.7% and added 0.99 points, with petrol up 23.6% and adding 0.77 points. Electricity was up 12.8% and rents were up 3.6%. The cash rate target is 4.85% after 5 rises in 2026, from 3.60% before the first rise. Mortgage repayments are not part of the grocery price index. The briefing notes point to the same watch list: petrol, power bills, housing, and the cash rate, ahead of the average supermarket aisle.",
+        "citations": [
+          "Overall prices up 4.3%",
+          "Food and drinks up 3.2%",
+          "Housing up 5.2%",
+          "Transport up 8.7%",
+          "Petrol up 23.6%",
+          "Cash rate 4.85%",
+          "What policymakers should watch next",
+          "Cash rate path and mortgage pressure",
+          "Meals out versus cooking at home"
+        ]
+      }
+    ],
+    "answer": "In September 2026, overall prices were up 4.3%. Food and drinks were up 3.2% and added 0.56 points to the national yearly rise. Housing was up 5.2% and added 1.14 points. Transport was up 8.7% and added 0.99 points, with petrol up 23.6% and adding 0.77 points. Electricity was up 12.8% and rents were up 3.6%. The cash rate target is 4.85% after 5 rises in 2026, from 3.60% before the first rise. Mortgage repayments are not part of the grocery price index. The briefing notes point to the same watch list: petrol, power bills, housing, and the cash rate, ahead of the average supermarket aisle.",
+    "citations": [
+      "Overall prices up 4.3%",
+      "Food and drinks up 3.2%",
+      "Housing up 5.2%",
+      "Transport up 8.7%",
+      "Petrol up 23.6%",
+      "Cash rate 4.85%",
+      "What policymakers should watch next",
+      "Cash rate path and mortgage pressure",
+      "Meals out versus cooking at home"
+    ],
+    "tools_used": [
+      "get_kpi_snapshot",
+      "retrieve_insights"
+    ]
+  },
+  {
+    "question": "What if a household shifts spend from beef and fruit toward eggs and pork?",
+    "started_at": "2026-11-07T09:39:13+11:00",
+    "timezone": "Australia/Melbourne",
+    "steps": [
+      {
+        "kind": "thought",
+        "text": "The question asks for a basket shift, so I need to reweight the published price changes with the published basket weights."
+      },
+      {
+        "kind": "action",
+        "tool": "what_if_basket",
+        "arguments": {
+          "scenario": "shift_beef_fruit_to_eggs_pork"
+        }
+      },
+      {
+        "kind": "observation",
+        "tool": "what_if_basket",
+        "ok": true,
+        "payload": {
+          "period": "2026-09",
+          "period_label": "September 2026",
+          "weight_period": "2024-Q4",
+          "scenario": "shift_beef_fruit_to_eggs_pork",
+          "baseline_yoy": 3.0259,
+          "scenario_yoy": 2.2102,
+          "difference_pp": -0.8157,
+          "beef_yoy": 5.8,
+          "fruit_yoy": 10.2,
+          "eggs_yoy": -2.3,
+          "pork_yoy": -1.3
+        }
+      },
+      {
+        "kind": "thought",
+        "text": "The published figures I need are already in the observations."
+      },
+      {
+        "kind": "final",
+        "text": "Using the late 2024 basket weights, a supermarket basket weighted like the national shopping basket was up 3.0% in September 2026. Moving half of the beef weight and half of the fruit weight onto eggs and pork, split evenly, leaves that basket up 2.2%. That trims the basket's yearly rise by 0.8 percentage points. Beef was up 5.8%, fruit up 10.2%, eggs down 2.3%, and pork down 1.3%.",
+        "citations": [
+          "Baseline basket up 3.0%",
+          "Shifted basket up 2.2%",
+          "Difference -0.8 percentage points"
+        ]
+      }
+    ],
+    "answer": "Using the late 2024 basket weights, a supermarket basket weighted like the national shopping basket was up 3.0% in September 2026. Moving half of the beef weight and half of the fruit weight onto eggs and pork, split evenly, leaves that basket up 2.2%. That trims the basket's yearly rise by 0.8 percentage points. Beef was up 5.8%, fruit up 10.2%, eggs down 2.3%, and pork down 1.3%.",
+    "citations": [
+      "Baseline basket up 3.0%",
+      "Shifted basket up 2.2%",
+      "Difference -0.8 percentage points"
+    ],
+    "tools_used": [
+      "what_if_basket"
+    ]
+  },
+  {
+    "question": "How do groceries compare with transport and housing?",
+    "started_at": "2026-11-07T09:39:13+11:00",
+    "timezone": "Australia/Melbourne",
+    "steps": [
+      {
+        "kind": "thought",
+        "text": "I need the latest published headline figures before answering."
+      },
+      {
+        "kind": "action",
+        "tool": "get_kpi_snapshot",
+        "arguments": {}
+      },
+      {
+        "kind": "observation",
+        "tool": "get_kpi_snapshot",
+        "ok": true,
+        "payload": {
+          "period": "2026-09",
+          "period_label": "September 2026",
+          "headline_yoy": 4.3,
+          "food_yoy": 3.2,
+          "housing_yoy": 5.2,
+          "transport_yoy": 8.7,
+          "petrol_yoy": 23.6,
+          "electricity_yoy": 12.8,
+          "rents_yoy": 3.6,
+          "fruit_yoy": 10.2,
+          "beef_yoy": 5.8,
+          "cereals_yoy": 8.5,
+          "eggs_yoy": -2.3,
+          "pork_yoy": -1.3,
+          "poultry_yoy": 0.4,
+          "milk_yoy": 5.4,
+          "food_contribution_pp": 0.5578,
+          "housing_contribution_pp": 1.1415,
+          "transport_contribution_pp": 0.9853,
+          "petrol_contribution_pp": 0.7702,
+          "fruit_contribution_pp": 0.0915,
+          "electricity_contribution_pp": 0.3034,
+          "meals_out_contribution_pp": 0.2768,
+          "cash_rate_target": 4.85,
+          "cash_rate_date": "2026-11-04",
+          "hikes_2026": 5,
+          "rate_before_2026_rises": 3.6,
+          "rate_path_2026": [
+            {
+              "decision_date": "2026-02-04",
+              "cash_rate_target": 3.85,
+              "previous_target": 3.6,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-03-18",
+              "cash_rate_target": 4.1,
+              "previous_target": 3.85,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-05-06",
+              "cash_rate_target": 4.35,
+              "previous_target": 4.1,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-09-30",
+              "cash_rate_target": 4.6,
+              "previous_target": 4.35,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": null,
+              "move": "hike"
+            },
+            {
+              "decision_date": "2026-11-04",
+              "cash_rate_target": 4.85,
+              "previous_target": 4.6,
+              "change_from_level": 0.25,
+              "cash_rate_change_published": 0.25,
+              "move": "hike"
+            }
+          ],
+          "latest_decision": {
+            "decision_date": "2026-11-04",
+            "cash_rate_target": 4.85,
+            "previous_target": 4.6,
+            "change_from_level": 0.25,
+            "cash_rate_change_published": 0.25,
+            "move": "hike"
+          }
+        }
+      },
+      {
+        "kind": "thought",
+        "text": "The published figures I need are already in the observations."
+      },
+      {
+        "kind": "final",
+        "text": "In September 2026, overall prices were up 4.3%. Food and drinks were up 3.2% and added 0.56 points to the national yearly rise. Housing was up 5.2% and added 1.14 points. Transport was up 8.7% and added 0.99 points, with petrol up 23.6% and adding 0.77 points. Electricity was up 12.8% and rents were up 3.6%. The cash rate target is 4.85% after 5 rises in 2026, from 3.60% before the first rise. Mortgage repayments are not part of the grocery price index.",
+        "citations": [
+          "Overall prices up 4.3%",
+          "Food and drinks up 3.2%",
+          "Housing up 5.2%",
+          "Transport up 8.7%",
+          "Petrol up 23.6%",
+          "Cash rate 4.85%"
+        ]
+      }
+    ],
+    "answer": "In September 2026, overall prices were up 4.3%. Food and drinks were up 3.2% and added 0.56 points to the national yearly rise. Housing was up 5.2% and added 1.14 points. Transport was up 8.7% and added 0.99 points, with petrol up 23.6% and adding 0.77 points. Electricity was up 12.8% and rents were up 3.6%. The cash rate target is 4.85% after 5 rises in 2026, from 3.60% before the first rise. Mortgage repayments are not part of the grocery price index.",
+    "citations": [
+      "Overall prices up 4.3%",
+      "Food and drinks up 3.2%",
+      "Housing up 5.2%",
+      "Transport up 8.7%",
+      "Petrol up 23.6%",
+      "Cash rate 4.85%"
+    ],
+    "tools_used": [
+      "get_kpi_snapshot"
+    ]
+  }
+]

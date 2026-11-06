@@ -1,0 +1,273 @@
+index_id,index_name,period,weight_pct
+10001,All groups CPI,2019-Q3,100
+10001,All groups CPI,2020-Q3,100
+10001,All groups CPI,2021-Q3,100
+10001,All groups CPI,2022-Q3,100
+10001,All groups CPI,2023-Q4,100
+10001,All groups CPI,2024-Q4,100
+114120,Fruit and vegetables,2018-Q3,2.23
+114120,Fruit and vegetables,2019-Q3,2.14
+114120,Fruit and vegetables,2020-Q3,2.48
+114120,Fruit and vegetables,2021-Q3,2.31
+114120,Fruit and vegetables,2022-Q3,2.37
+114120,Fruit and vegetables,2023-Q4,1.99
+114120,Fruit and vegetables,2024-Q4,2.0336
+114121,Fruit,2018-Q3,1.04
+114121,Fruit,2019-Q3,0.98
+114121,Fruit,2020-Q3,1.1
+114121,Fruit,2021-Q3,1
+114121,Fruit,2022-Q3,0.96
+114121,Fruit,2023-Q4,0.87
+114121,Fruit,2024-Q4,0.923
+114122,Vegetables,2018-Q3,1.19
+114122,Vegetables,2019-Q3,1.16
+114122,Vegetables,2020-Q3,1.38
+114122,Vegetables,2021-Q3,1.31
+114122,Vegetables,2022-Q3,1.41
+114122,Vegetables,2023-Q4,1.12
+114122,Vegetables,2024-Q4,1.1106
+115501,Snacks and confectionery,2018-Q3,0.88
+115501,Snacks and confectionery,2019-Q3,0.83
+115501,Snacks and confectionery,2020-Q3,0.9
+115501,Snacks and confectionery,2021-Q3,0.84
+115501,Snacks and confectionery,2022-Q3,0.83
+115501,Snacks and confectionery,2023-Q4,0.89
+115501,Snacks and confectionery,2024-Q4,0.9253
+115520,"Waters, soft drinks and juices",2018-Q3,0.76
+115520,"Waters, soft drinks and juices",2019-Q3,0.75
+115520,"Waters, soft drinks and juices",2020-Q3,0.84
+115520,"Waters, soft drinks and juices",2021-Q3,0.86
+115520,"Waters, soft drinks and juices",2022-Q3,0.89
+115520,"Waters, soft drinks and juices",2023-Q4,0.91
+115520,"Waters, soft drinks and juices",2024-Q4,0.9503
+115522,Rents,2018-Q3,7.1
+115522,Rents,2019-Q3,6.84
+115522,Rents,2020-Q3,6.8
+115522,Rents,2021-Q3,6.23
+115522,Rents,2022-Q3,5.75
+115522,Rents,2023-Q4,6.03
+115522,Rents,2024-Q4,6.6129
+131178,Pork,2018-Q3,0.29
+131178,Pork,2019-Q3,0.29
+131178,Pork,2020-Q3,0.34
+131178,Pork,2021-Q3,0.32
+131178,Pork,2022-Q3,0.29
+131178,Pork,2023-Q4,0.28
+131178,Pork,2024-Q4,0.2698
+131179,Food products n.e.c.,2018-Q3,2.11
+131179,Food products n.e.c.,2019-Q3,2.01
+131179,Food products n.e.c.,2020-Q3,2.28
+131179,Food products n.e.c.,2021-Q3,2.11
+131179,Food products n.e.c.,2022-Q3,2.09
+131179,Food products n.e.c.,2023-Q4,2.21
+131179,Food products n.e.c.,2024-Q4,2.2865
+131180,Non-alcoholic beverages,2018-Q3,0.97
+131180,Non-alcoholic beverages,2019-Q3,0.96
+131180,Non-alcoholic beverages,2020-Q3,1.1
+131180,Non-alcoholic beverages,2021-Q3,1.1
+131180,Non-alcoholic beverages,2022-Q3,1.15
+131180,Non-alcoholic beverages,2023-Q4,1.17
+131180,Non-alcoholic beverages,2024-Q4,1.2099
+20001,Food and non-alcoholic beverages,2018-Q3,15.76
+20001,Food and non-alcoholic beverages,2019-Q3,15.75
+20001,Food and non-alcoholic beverages,2020-Q3,17.35
+20001,Food and non-alcoholic beverages,2021-Q3,16.76
+20001,Food and non-alcoholic beverages,2022-Q3,17.18
+20001,Food and non-alcoholic beverages,2023-Q4,17.15
+20001,Food and non-alcoholic beverages,2024-Q4,17.4394
+20003,Housing,2018-Q3,23.19
+20003,Housing,2019-Q3,22.93
+20003,Housing,2020-Q3,24.05
+20003,Housing,2021-Q3,23.24
+20003,Housing,2022-Q3,22.24
+20003,Housing,2023-Q4,21.74
+20003,Housing,2024-Q4,21.3853
+20005,Transport,2018-Q3,10.48
+20005,Transport,2019-Q3,10.68
+20005,Transport,2020-Q3,10.19
+20005,Transport,2021-Q3,10.58
+20005,Transport,2022-Q3,10.99
+20005,Transport,2023-Q4,11.42
+20005,Transport,2024-Q4,11.4459
+30001,Dairy and related products,2018-Q3,0.96
+30001,Dairy and related products,2019-Q3,0.99
+30001,Dairy and related products,2020-Q3,1.1
+30001,Dairy and related products,2021-Q3,1.01
+30001,Dairy and related products,2022-Q3,1.01
+30001,Dairy and related products,2023-Q4,1.09
+30001,Dairy and related products,2024-Q4,1.0751
+30002,Bread and cereal products,2018-Q3,1.43
+30002,Bread and cereal products,2019-Q3,1.45
+30002,Bread and cereal products,2020-Q3,1.55
+30002,Bread and cereal products,2021-Q3,1.43
+30002,Bread and cereal products,2022-Q3,1.42
+30002,Bread and cereal products,2023-Q4,1.55
+30002,Bread and cereal products,2024-Q4,1.5619
+30003,Meat and seafoods,2018-Q3,2.14
+30003,Meat and seafoods,2019-Q3,2.23
+30003,Meat and seafoods,2020-Q3,2.54
+30003,Meat and seafoods,2021-Q3,2.45
+30003,Meat and seafoods,2022-Q3,2.33
+30003,Meat and seafoods,2023-Q4,2.12
+30003,Meat and seafoods,2024-Q4,2.1391
+30007,Meals out and take away foods,2018-Q3,5.92
+30007,Meals out and take away foods,2019-Q3,5.97
+30007,Meals out and take away foods,2020-Q3,6.3
+30007,Meals out and take away foods,2021-Q3,6.35
+30007,Meals out and take away foods,2022-Q3,6.81
+30007,Meals out and take away foods,2023-Q4,7.02
+30007,Meals out and take away foods,2024-Q4,7.1333
+40001,Milk,2018-Q3,0.35
+40001,Milk,2019-Q3,0.37
+40001,Milk,2020-Q3,0.42
+40001,Milk,2021-Q3,0.4
+40001,Milk,2022-Q3,0.42
+40001,Milk,2023-Q4,0.44
+40001,Milk,2024-Q4,0.4187
+40002,Cheese,2018-Q3,0.29
+40002,Cheese,2019-Q3,0.29
+40002,Cheese,2020-Q3,0.34
+40002,Cheese,2021-Q3,0.32
+40002,Cheese,2022-Q3,0.3
+40002,Cheese,2023-Q4,0.34
+40002,Cheese,2024-Q4,0.34
+40004,Ice cream and other dairy products,2018-Q3,0.32
+40004,Ice cream and other dairy products,2019-Q3,0.33
+40004,Ice cream and other dairy products,2020-Q3,0.34
+40004,Ice cream and other dairy products,2021-Q3,0.29
+40004,Ice cream and other dairy products,2022-Q3,0.29
+40004,Ice cream and other dairy products,2023-Q4,0.31
+40004,Ice cream and other dairy products,2024-Q4,0.3164
+40005,Bread,2018-Q3,0.53
+40005,Bread,2019-Q3,0.54
+40005,Bread,2020-Q3,0.57
+40005,Bread,2021-Q3,0.53
+40005,Bread,2022-Q3,0.53
+40005,Bread,2023-Q4,0.6
+40005,Bread,2024-Q4,0.616
+40006,Cakes and biscuits,2018-Q3,0.62
+40006,Cakes and biscuits,2019-Q3,0.62
+40006,Cakes and biscuits,2020-Q3,0.66
+40006,Cakes and biscuits,2021-Q3,0.61
+40006,Cakes and biscuits,2022-Q3,0.6
+40006,Cakes and biscuits,2023-Q4,0.65
+40006,Cakes and biscuits,2024-Q4,0.6598
+40007,Breakfast cereals,2018-Q3,0.12
+40007,Breakfast cereals,2019-Q3,0.13
+40007,Breakfast cereals,2020-Q3,0.13
+40007,Breakfast cereals,2021-Q3,0.12
+40007,Breakfast cereals,2022-Q3,0.11
+40007,Breakfast cereals,2023-Q4,0.11
+40007,Breakfast cereals,2024-Q4,0.099
+40008,Other cereal products,2018-Q3,0.16
+40008,Other cereal products,2019-Q3,0.16
+40008,Other cereal products,2020-Q3,0.19
+40008,Other cereal products,2021-Q3,0.17
+40008,Other cereal products,2022-Q3,0.18
+40008,Other cereal products,2023-Q4,0.19
+40008,Other cereal products,2024-Q4,0.1871
+40009,Beef and veal,2018-Q3,0.46
+40009,Beef and veal,2019-Q3,0.48
+40009,Beef and veal,2020-Q3,0.53
+40009,Beef and veal,2021-Q3,0.54
+40009,Beef and veal,2022-Q3,0.53
+40009,Beef and veal,2023-Q4,0.44
+40009,Beef and veal,2024-Q4,0.4234
+40010,Lamb and goat,2018-Q3,0.22
+40010,Lamb and goat,2019-Q3,0.26
+40010,Lamb and goat,2020-Q3,0.31
+40010,Lamb and goat,2021-Q3,0.31
+40010,Lamb and goat,2022-Q3,0.29
+40010,Lamb and goat,2023-Q4,0.21
+40010,Lamb and goat,2024-Q4,0.243
+40012,Poultry,2018-Q3,0.42
+40012,Poultry,2019-Q3,0.44
+40012,Poultry,2020-Q3,0.48
+40012,Poultry,2021-Q3,0.45
+40012,Poultry,2022-Q3,0.44
+40012,Poultry,2023-Q4,0.43
+40012,Poultry,2024-Q4,0.4263
+40014,Other meats,2018-Q3,0.36
+40014,Other meats,2019-Q3,0.37
+40014,Other meats,2020-Q3,0.42
+40014,Other meats,2021-Q3,0.39
+40014,Other meats,2022-Q3,0.38
+40014,Other meats,2023-Q4,0.36
+40014,Other meats,2024-Q4,0.3976
+40015,Fish and other seafood,2018-Q3,0.39
+40015,Fish and other seafood,2019-Q3,0.39
+40015,Fish and other seafood,2020-Q3,0.46
+40015,Fish and other seafood,2021-Q3,0.44
+40015,Fish and other seafood,2022-Q3,0.4
+40015,Fish and other seafood,2023-Q4,0.4
+40015,Fish and other seafood,2024-Q4,0.379
+40025,Restaurant meals,2018-Q3,3.32
+40025,Restaurant meals,2019-Q3,3.3
+40025,Restaurant meals,2020-Q3,3.47
+40025,Restaurant meals,2021-Q3,3.42
+40025,Restaurant meals,2022-Q3,3.96
+40025,Restaurant meals,2023-Q4,3.87
+40025,Restaurant meals,2024-Q4,3.9464
+40026,Take away and fast foods,2018-Q3,2.6
+40026,Take away and fast foods,2019-Q3,2.67
+40026,Take away and fast foods,2020-Q3,2.83
+40026,Take away and fast foods,2021-Q3,2.93
+40026,Take away and fast foods,2022-Q3,2.85
+40026,Take away and fast foods,2023-Q4,3.15
+40026,Take away and fast foods,2024-Q4,3.1869
+40027,Eggs,2018-Q3,0.12
+40027,Eggs,2019-Q3,0.12
+40027,Eggs,2020-Q3,0.14
+40027,Eggs,2021-Q3,0.13
+40027,Eggs,2022-Q3,0.12
+40027,Eggs,2023-Q4,0.12
+40027,Eggs,2024-Q4,0.1359
+40029,"Jams, honey and spreads",2018-Q3,0.13
+40029,"Jams, honey and spreads",2019-Q3,0.12
+40029,"Jams, honey and spreads",2020-Q3,0.14
+40029,"Jams, honey and spreads",2021-Q3,0.13
+40029,"Jams, honey and spreads",2022-Q3,0.12
+40029,"Jams, honey and spreads",2023-Q4,0.12
+40029,"Jams, honey and spreads",2024-Q4,0.1192
+40030,"Coffee, tea and cocoa",2018-Q3,0.21
+40030,"Coffee, tea and cocoa",2019-Q3,0.21
+40030,"Coffee, tea and cocoa",2020-Q3,0.26
+40030,"Coffee, tea and cocoa",2021-Q3,0.24
+40030,"Coffee, tea and cocoa",2022-Q3,0.26
+40030,"Coffee, tea and cocoa",2023-Q4,0.26
+40030,"Coffee, tea and cocoa",2024-Q4,0.2596
+40034,Other food products n.e.c.,2018-Q3,0.52
+40034,Other food products n.e.c.,2019-Q3,0.5
+40034,Other food products n.e.c.,2020-Q3,0.57
+40034,Other food products n.e.c.,2021-Q3,0.51
+40034,Other food products n.e.c.,2022-Q3,0.49
+40034,Other food products n.e.c.,2023-Q4,0.52
+40034,Other food products n.e.c.,2024-Q4,0.526
+40055,Electricity,2018-Q3,2.54
+40055,Electricity,2019-Q3,2.63
+40055,Electricity,2020-Q3,2.8
+40055,Electricity,2021-Q3,2.52
+40055,Electricity,2022-Q3,2.22
+40055,Electricity,2023-Q4,2.36
+40055,Electricity,2024-Q4,1.8353
+40081,Automotive fuel,2018-Q3,3.24
+40081,Automotive fuel,2019-Q3,3.57
+40081,Automotive fuel,2020-Q3,3.16
+40081,Automotive fuel,2021-Q3,3.28
+40081,Automotive fuel,2022-Q3,3.61
+40081,Automotive fuel,2023-Q4,3.73
+40081,Automotive fuel,2024-Q4,3.3469
+97549,Food additives and condiments,2018-Q3,0.28
+97549,Food additives and condiments,2019-Q3,0.26
+97549,Food additives and condiments,2020-Q3,0.32
+97549,Food additives and condiments,2021-Q3,0.3
+97549,Food additives and condiments,2022-Q3,0.31
+97549,Food additives and condiments,2023-Q4,0.31
+97549,Food additives and condiments,2024-Q4,0.315
+97550,Oils and fats,2018-Q3,0.18
+97550,Oils and fats,2019-Q3,0.18
+97550,Oils and fats,2020-Q3,0.21
+97550,Oils and fats,2021-Q3,0.2
+97550,Oils and fats,2022-Q3,0.22
+97550,Oils and fats,2023-Q4,0.25
+97550,Oils and fats,2024-Q4,0.2651

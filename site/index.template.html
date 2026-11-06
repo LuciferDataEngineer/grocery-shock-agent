@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocery briefing — where the shop hurts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="banner">
+    <div class="wrap">
+      <p class="eyebrow">Household briefing · Australia</p>
+      <h1>Where the grocery shop hurts</h1>
+      <p class="lede" id="lede"></p>
+      <p class="lede" id="prepared"></p>
+    </div>
+  </header>
+  <div class="wrap">
+    <nav class="tabs" role="tablist" aria-label="Briefing sections">
+      <button type="button" role="tab" aria-selected="true" data-panel="panel-briefing">The month</button>
+      <button type="button" role="tab" aria-selected="false" data-panel="panel-shop">The shop</button>
+      <button type="button" role="tab" aria-selected="false" data-panel="panel-swaps">What to swap</button>
+      <button type="button" role="tab" aria-selected="false" data-panel="panel-watch">What to watch</button>
+      <button type="button" role="tab" aria-selected="false" data-panel="panel-questions">Questions</button>
+    </nav>
+    <section class="panel active" id="panel-briefing" role="tabpanel">
+      <div class="kpis" id="kpis"></div>
+      <article class="box">
+        <p class="section-kicker">The picture</p>
+        <h2 id="hero-title"></h2>
+        <p id="hero-note"></p>
+        <div id="hero-chart" class="chart"></div>
+      </article>
+      <article class="means">
+        <h2>What this means</h2>
+        <p id="means"></p>
+      </article>
+    </section>
+    <section class="panel" id="panel-shop" role="tabpanel">
+      <article class="box">
+        <p class="section-kicker">Over the past year</p>
+        <h2 id="path-title"></h2>
+        <p id="path-note"></p>
+        <div id="path-chart" class="chart short"></div>
+      </article>
+    </section>
+    <section class="panel" id="panel-swaps" role="tabpanel">
+      <article class="box">
+        <p class="section-kicker">Same aisle, slower rise</p>
+        <h2>If one line is too dear, look at the lines beside it</h2>
+        <p>These are published price changes, not a meal plan.</p>
+      </article>
+      <div class="swaps" id="swaps"></div>
+    </section>
+    <section class="panel" id="panel-watch" role="tabpanel">
+      <article class="box">
+        <p class="section-kicker">Beyond the aisle</p>
+        <h2 id="context-title"></h2>
+        <p id="context-note"></p>
+        <div id="context-chart" class="chart short"></div>
+        <ul class="checked" id="context-points"></ul>
+      </article>
+      <article class="box">
+        <p class="section-kicker">Mortgage pressure</p>
+        <h2 id="rate-title"></h2>
+        <p id="rate-note"></p>
+        <div id="rate-chart" class="chart rate"></div>
+      </article>
+    </section>
+    <section class="panel qa" id="panel-questions" role="tabpanel">
+      <h2>Questions people actually ask</h2>
+      <p>Each answer uses only the published figures. Nothing here was filled in from memory.</p>
+      <div id="questions"></div>
+    </section>
+    <footer class="sources">
+      <p>Times are Melbourne time. Downloaded <span id="access"></span>.</p>
+      <ul id="sources"></ul>
+    </footer>
+  </div>
+  <script src="vendor/echarts.min.js"></script>
+  <script>window.BRIEFING = __BRIEFING_JSON__;</script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("access").textContent = window.BRIEFING.access_label;
+  </script>
+</body>
+</html>

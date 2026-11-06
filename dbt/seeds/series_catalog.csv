@@ -1,0 +1,41 @@
+index_id,abs_name,plain_name,level,family,shelf,aisle
+10001,All groups CPI,Overall prices,headline,overview,0,context
+20001,Food and non-alcoholic beverages,Food and drinks,group,food,0,context
+20003,Housing,Housing,group,housing,0,context
+20005,Transport,Transport,group,transport,0,context
+40055,Electricity,Electricity,class,housing,0,context
+40081,Automotive fuel,Petrol,class,transport,0,context
+115522,Rents,Rents,class,housing,0,context
+30014,Rents,Rents (second series),class,housing,0,rollup
+30002,Bread and cereal products,Bread and cereals,subgroup,cereal,0,rollup
+40005,Bread,Bread,class,cereal,1,supermarket
+40006,Cakes and biscuits,Cakes and biscuits,class,cereal,1,supermarket
+40007,Breakfast cereals,Breakfast cereals,class,cereal,1,supermarket
+40008,Other cereal products,Other cereal products,class,cereal,0,rollup
+30003,Meat and seafoods,Meat and seafood,subgroup,meat,0,rollup
+40009,Beef and veal,Beef,class,meat,1,supermarket
+131178,Pork,Pork,class,meat,1,supermarket
+40010,Lamb and goat,Lamb,class,meat,1,supermarket
+40012,Poultry,Poultry,class,meat,1,supermarket
+40014,Other meats,Other meats,class,meat,0,rollup
+40015,Fish and other seafood,Fish,class,meat,1,supermarket
+30001,Dairy and related products,Dairy,subgroup,dairy,0,rollup
+40001,Milk,Milk,class,dairy,1,supermarket
+40002,Cheese,Cheese,class,dairy,1,supermarket
+40004,Ice cream and other dairy products,Ice cream and other dairy,class,dairy,1,supermarket
+114120,Fruit and vegetables,Fruit and vegetables,subgroup,produce,0,rollup
+114121,Fruit,Fruit,class,produce,1,supermarket
+114122,Vegetables,Vegetables,class,produce,1,supermarket
+131179,Food products n.e.c.,Other food,subgroup,pantry,0,rollup
+40027,Eggs,Eggs,class,eggs,1,supermarket
+40029,"Jams, honey and spreads",Jams and spreads,class,pantry,0,rollup
+97549,Food additives and condiments,Condiments,class,pantry,0,rollup
+97550,Oils and fats,Oils and fats,class,pantry,1,supermarket
+115501,Snacks and confectionery,Snacks and confectionery,class,pantry,1,supermarket
+40034,Other food products n.e.c.,Other packaged food,class,pantry,0,rollup
+131180,Non-alcoholic beverages,Non-alcoholic drinks,subgroup,drinks,0,rollup
+40030,"Coffee, tea and cocoa",Coffee and tea,class,drinks,1,supermarket
+115520,"Waters, soft drinks and juices",Soft drinks and juices,class,drinks,1,supermarket
+30007,Meals out and take away foods,Meals out and takeaway,subgroup,eating_out,0,eating_out
+40025,Restaurant meals,Restaurant meals,class,eating_out,0,eating_out
+40026,Take away and fast foods,Takeaway,class,eating_out,0,eating_out

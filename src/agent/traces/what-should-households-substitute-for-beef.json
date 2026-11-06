@@ -1,0 +1,84 @@
+{
+  "question": "What should households substitute for beef?",
+  "started_at": "2026-11-07T09:39:13+11:00",
+  "timezone": "Australia/Melbourne",
+  "steps": [
+    {
+      "kind": "thought",
+      "text": "The question asks for a substitute, so I need the same aisle's published yearly changes, not a guess."
+    },
+    {
+      "kind": "action",
+      "tool": "substitution_hints",
+      "arguments": {
+        "category": "40009"
+      }
+    },
+    {
+      "kind": "observation",
+      "tool": "substitution_hints",
+      "ok": true,
+      "payload": {
+        "period": "2026-09",
+        "period_label": "September 2026",
+        "plain_name": "Beef",
+        "index_id": "40009",
+        "family": "meat",
+        "yoy_pct": 5.8,
+        "alternatives": [
+          {
+            "plain_name": "Pork",
+            "index_id": "131178",
+            "yoy_pct": -1.3,
+            "gap_pp": -7.1
+          },
+          {
+            "plain_name": "Poultry",
+            "index_id": "40012",
+            "yoy_pct": 0.4,
+            "gap_pp": -5.4
+          },
+          {
+            "plain_name": "Fish",
+            "index_id": "40015",
+            "yoy_pct": 1.7,
+            "gap_pp": -4.1
+          },
+          {
+            "plain_name": "Lamb",
+            "index_id": "40010",
+            "yoy_pct": 3.0,
+            "gap_pp": -2.8
+          }
+        ],
+        "note": "Relative published price changes only. Not diet advice."
+      }
+    },
+    {
+      "kind": "thought",
+      "text": "The published figures I need are already in the observations."
+    },
+    {
+      "kind": "final",
+      "text": "Beef was up 5.8% in September 2026. In the same part of the shop, slower price rises were Pork (down 1.3%), Poultry (up 0.4%), Fish (up 1.7%), and Lamb (up 3.0%). Relative published price changes only. Not diet advice.",
+      "citations": [
+        "Beef up 5.8%",
+        "Pork down 1.3%",
+        "Poultry up 0.4%",
+        "Fish up 1.7%",
+        "Lamb up 3.0%"
+      ]
+    }
+  ],
+  "answer": "Beef was up 5.8% in September 2026. In the same part of the shop, slower price rises were Pork (down 1.3%), Poultry (up 0.4%), Fish (up 1.7%), and Lamb (up 3.0%). Relative published price changes only. Not diet advice.",
+  "citations": [
+    "Beef up 5.8%",
+    "Pork down 1.3%",
+    "Poultry up 0.4%",
+    "Fish up 1.7%",
+    "Lamb up 3.0%"
+  ],
+  "tools_used": [
+    "substitution_hints"
+  ]
+}

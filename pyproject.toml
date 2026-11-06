@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grocery-shock-agent"
+version = "1.0.0"
+description = "Tool-calling briefing agent over ABS grocery prices and the RBA cash rate."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb==1.4.2",
+  "polars==1.34.0",
+  "pyarrow==21.0.0",
+  "dbt-core==1.10.23",
+  "dbt-duckdb==1.9.4",
+  "dagster==1.11.11",
+  "great-expectations==1.5.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "ruff==0.13.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/grocery_shock/insights.py" = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["grocery_shock", "agent", "orchestration"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

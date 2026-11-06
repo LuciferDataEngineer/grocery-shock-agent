@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: bronze
+    tables:
+      - name: cpi_observations
+        description: Polars extract of the ABS monthly CPI snapshot.
+        meta:
+          external_location: "read_parquet('{{ env_var('GROCERY_BRONZE') }}/cpi_observations.parquet')"
+      - name: cpi_weights
+        description: Polars extract of ABS CPI weights.
+        meta:
+          external_location: "read_parquet('{{ env_var('GROCERY_BRONZE') }}/cpi_weights.parquet')"
+      - name: cash_rate_daily
+        description: Polars extract of the RBA cash rate target.
+        meta:
+          external_location: "read_parquet('{{ env_var('GROCERY_BRONZE') }}/cash_rate_daily.parquet')"
